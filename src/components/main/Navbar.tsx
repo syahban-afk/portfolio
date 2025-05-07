@@ -20,7 +20,7 @@ const Navbar = () => {
             className="cursor-pointer hover:animate-slowspin"
           />
           <span className="font-bold ml-2 hidden md:block text-gray-300">
-            Kazeo
+            SYZ
           </span>
         </a>
 
@@ -49,11 +49,10 @@ const Navbar = () => {
 
         <div className="hidden md:flex space-x-5">
           {Socials.map((social) => (
-        <a href={social.link}>
+        <a href={social.link} key={social.name}>
           <Image
               src={social.src}
               alt={social.name}
-              key={social.name}
               width={24}
               height={24}
             />
@@ -82,11 +81,10 @@ const Navbar = () => {
           </a>
           <div className="flex space-x-5">
             {Socials.map((social) => (
-              <a href={social.link}>
+              <a href={social.link} key={social.name}>
               <Image
                   src={social.src}
                   alt={social.name}
-                  key={social.name}
                   width={24}
                   height={24}
                 />
