@@ -1,10 +1,6 @@
 "use-client";
 import React from "react";
-import {
-  RxGithubLogo,
-  RxInstagramLogo,
-  RxLinkedinLogo,
-} from "react-icons/rx";
+import { RxGithubLogo, RxInstagramLogo, RxLinkedinLogo } from "react-icons/rx";
 import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
@@ -13,14 +9,16 @@ const Footer = () => {
       <div className="w-full flex flex-col items-center justify-center m-auto">
         <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
           <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-            <div className="font-bold text-[16px]">Check this</div>
+            <div className="font-bold text-[16px]">Find me in</div>
+
             <a
-              href="https://www.youtube.com/@SyahbanStudy"
+              href=""
               className="flex flex-row items-center my-[15px] cursor-pointer"
             >
-              <FaYoutube />
-              <span className="text-[15px] ml-[6px]">Youtube</span>
+              <RxLinkedinLogo />
+              <span className="text-[15px] ml-[6px]">Linkedin</span>
             </a>
+
             <a
               href="https://github.com/syahban-afk"
               className="flex flex-row items-center my-[15px] cursor-pointer"
@@ -31,19 +29,21 @@ const Footer = () => {
           </div>
           <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
             <div className="font-bold text-[16px]">Social Media</div>
+
+            <a
+              href="https://www.youtube.com/@SyahbanStudy"
+              className="flex flex-row items-center my-[15px] cursor-pointer"
+            >
+              <FaYoutube />
+              <span className="text-[15px] ml-[6px]">Youtube</span>
+            </a>
+
             <a
               href="https://www.instagram.com/syahban_245/"
               className="flex flex-row items-center my-[15px] cursor-pointer"
             >
               <RxInstagramLogo />
               <span className="text-[15px] ml-[6px]">Instagram</span>
-            </a>
-            <a
-              href=""
-              className="flex flex-row items-center my-[15px] cursor-pointer"
-            >
-              <RxLinkedinLogo />
-              <span className="text-[15px] ml-[6px]">Linkedin</span>
             </a>
           </div>
           <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">

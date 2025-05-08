@@ -32,7 +32,7 @@ const HeroContent = () => {
         >
           <span>
             Providing
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 animate-gradient-x">
               {" "}
               the best{" "}
             </span>
@@ -42,9 +42,11 @@ const HeroContent = () => {
 
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className="text-lg text-gray-400 my-5 max-w-[600px]"
+          className="text-lg text-slate-300 my-5 max-w-[600px]"
         >
-          I&apos;am a Full Stack Software Engineer with experience in Website, Sistem Internet of Things, and a designer too. Check out my projects and skills.
+          I&apos;am a Full Stack Software Engineer with experience in Website,
+          Sistem Internet of Things, and a designer too. Check out my projects
+          and skills.
         </motion.p>
         <motion.a variants={slideInFromLeft(1)}>
           <div className="relative group">
@@ -53,21 +55,21 @@ const HeroContent = () => {
 
               <div className="absolute flex items-center justify-center text-white z-[1] opacity-90 rounded-2xl inset-0.5 bg-black">
                 <a href="test.pdf" download="Syahban_Syahputra_CV.pdf">
-                <button
-                  name="text"
-                  className="flex items-center justify-center gap-2 font-semibold text-lg h-full opacity-90 w-full px-4 py-3 rounded-xl bg-black cursor-pointer"
-                >
-                  Download CV
-                  <Image
-                    src="/download.png"
-                    alt="Download"
-                    width={30}
-                    height={30}
-                  />
-                </button>
+                  <button
+                    name="text"
+                    className="flex items-center justify-center gap-2 font-semibold text-lg h-full opacity-90 w-full px-4 py-3 rounded-xl bg-black cursor-pointer"
+                  >
+                    Download CV
+                    <Image
+                      src="/download.png"
+                      alt="Download"
+                      width={30}
+                      height={30}
+                    />
+                  </button>
                 </a>
               </div>
-              <div className="absolute duration-1000 group-hover:animate-spin w-full h-[100px] bg-gradient-to-r from-green-500 to-yellow-500 blur-[30px]"></div>
+              <div className="absolute duration-1000 group-hover:animate-spin w-full h-[100px] bg-gradient-to-r from-blue-400 to-purple-600 blur-[30px]"></div>
             </div>
           </div>
         </motion.a>

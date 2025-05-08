@@ -99,26 +99,41 @@ export const Frontend_skill = [
   
   ];
 
-  export const Projects = [
+  export const ProjectsAll = [
     {
-      title: "Modern Next.js Portfolio",
-      link:"",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "Portfolio Website",
+      link: "https://github.com/syahban-afk/portfolio",
+      description: "Portfolio website modern yang dibangun menggunakan Next.js 13, Tailwind CSS, dan Framer Motion. Website ini menampilkan animasi yang menarik, responsif, dan memiliki fitur dark mode.",
       src: "/NextWebsite.png",
     },
     {
-      title: "Interactive Website Cards",
-      link:"",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "Smart Home IoT Dashboard",
+      link: "https://github.com/syahban-afk/smart-home",
+      description: "Aplikasi dashboard untuk monitoring dan kontrol perangkat IoT rumah pintar. Dibuat menggunakan React.js, Node.js, dan MongoDB. Mendukung real-time monitoring menggunakan WebSocket.",
       src: "/CardImage.png",
     },
     {
-      title: "Space Themed Website",
-      link:"",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "E-Learning Platform",
+      link: "https://github.com/syahban-afk/elearning",
+      description: "Platform pembelajaran online dengan fitur video streaming, quiz interaktif, dan sistem manajemen konten. Dibangun menggunakan Next.js, Express.js, dan MySQL.",
       src: "/SpaceWebsite.png",
     },
+    {
+      title: "Weather Monitoring System",
+      link: "https://github.com/syahban-afk/weather-monitor",
+      description: "Sistem monitoring cuaca berbasis IoT yang menggunakan sensor DHT11 dan ESP8266. Frontend dibuat dengan React dan backend menggunakan Node.js dengan database MongoDB.",
+      src: "/NextWebsite.png",
+    },
+    {
+      title: "Inventory Management System",
+      link: "https://github.com/syahban-afk/inventory",
+      description: "Aplikasi manajemen inventaris dengan fitur tracking stok, laporan penjualan, dan notifikasi stok minimum. Dibuat menggunakan React.js, Express.js, dan MySQL.",
+      src: "/CardImage.png",
+    },
+    {
+      title: "Task Management App",
+      link: "https://github.com/syahban-afk/task-manager",
+      description: "Aplikasi manajemen tugas dengan fitur kolaborasi tim, deadline reminder, dan tracking progress. Dibangun menggunakan Next.js, Node.js, dan MongoDB.",
+      src: "/SpaceWebsite.png",
+    }
   ];
