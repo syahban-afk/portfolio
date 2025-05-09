@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="font-bold text-[16px]">Find me in</div>
 
             <a
-              href=""
+              href="https://www.linkedin.com/in/syahban-syahputra-6b63bb333/"
               className="flex flex-row items-center my-[15px] cursor-pointer"
             >
               <RxLinkedinLogo />
@@ -50,7 +50,7 @@ const Footer = () => {
             <div className="font-bold text-[16px]">About</div>
             <p className="flex flex-row items-center my-[15px] cursor-pointer">
               <span className="text-[15px] ml-[6px]">
-                <p>&copy; Create by: Syahban Syaputra</p>
+                <p>By: Syahban Syaputra</p>
               </span>
             </p>
             <p className="flex flex-row items-center my-[15px] cursor-pointer">

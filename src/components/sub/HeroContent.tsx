@@ -54,14 +54,14 @@ const HeroContent = () => {
               <div className="absolute z-10 -translate-x-44 group-hover:translate-x-[30rem] ease-in transistion-all duration-700 h-full w-44 bg-gradient-to-r from-gray-500 to-white/10 opacity-30 -skew-x-12"></div>
 
               <div className="absolute flex items-center justify-center text-white z-[1] opacity-90 rounded-2xl inset-0.5 bg-black">
-                <a href="test.pdf" download="Syahban_Syahputra_CV.pdf">
+                <a href="/other/CV_Syahban_Syaputra.pdf" download="Syahban_CV.pdf">
                   <button
                     name="text"
                     className="flex items-center justify-center gap-2 font-semibold text-lg h-full opacity-90 w-full px-4 py-3 rounded-xl bg-black cursor-pointer"
                   >
                     Download CV
                     <Image
-                      src="/download.png"
+                      src="/other/download.png"
                       alt="Download"
                       width={30}
                       height={30}
@@ -80,7 +80,7 @@ const HeroContent = () => {
         className="w-full h-full flex justify-center items-center"
       >
         <Image
-          src="/mainIconsdark.svg"
+          src="/page/mainIconsdark.svg"
           alt="work icons"
           height={650}
           width={650}

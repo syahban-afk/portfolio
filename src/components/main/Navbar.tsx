@@ -2,19 +2,32 @@
 
 import { Socials } from "@/constants";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
   const router = useRouter();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [prevScrollPos]);
 
   const handleScroll = async (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
     e.preventDefault();
     
     const currentPath = window.location.pathname;
-    if (currentPath === '/projects') {
+    if (currentPath !== '/') {
       await router.push('/');
       setTimeout(() => {
         const element = document.querySelector(targetId);
@@ -32,11 +45,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full h-[65px] fixed top-0 shadow-lg bg-[#03001417] backdrop-blur-md z-50 px-6 md:px-10 duration-1000 group-hover:animate-spin border border-[#7042f861]">
+    <nav className={`w-full h-[65px] fixed top-0 shadow-lg bg-[#03001417] backdrop-blur-md z-50 px-6 md:px-10 duration-300 border border-[#7042f861] transition-transform ${
+      visible ? 'translate-y-0' : '-translate-y-full'
+    }`}>
       <div className="w-full h-full flex items-center justify-between">
         <a href="/" className="flex items-center">
           <Image
-            src="/NavLogo.png"
+            src="/page/NavLogo.png"
             alt="logo"
             width={50}
             height={50}
