@@ -45,9 +45,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`w-full h-[65px] fixed top-0 shadow-lg bg-[#03001417] backdrop-blur-md z-50 px-6 md:px-10 duration-300 border border-[#7042f861] transition-transform ${
-      visible ? 'translate-y-0' : '-translate-y-full'
-    }`}>
+    <nav
+      className={`w-full h-[65px] fixed top-0 shadow-lg bg-[#03001417] backdrop-blur-md z-50 px-6 md:px-10 duration-300 border border-[#7042f861] transition-transform ${
+        visible ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
       <div className="w-full h-full flex items-center justify-between">
         <a href="/" className="flex items-center">
           <Image
@@ -57,7 +59,7 @@ const Navbar = () => {
             height={50}
             className="cursor-pointer hover:animate-slowspin"
           />
-          <span className="font-bold ml-2 hidden md:block text-gray-300">
+          <span className="font-bold ml-2 hidden md:block text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 animate-gradient-x">
             SYZ
           </span>
         </a>
@@ -67,14 +69,14 @@ const Navbar = () => {
             <a
               href="#about-me"
               className="text-gray-200 hover:text-gray-400 mx-3"
-              onClick={(e) => handleScroll(e, '#about-me')}
+              onClick={(e) => handleScroll(e, "#about-me")}
             >
               About Me
             </a>
             <a
               href="#skills"
               className="text-gray-200 hover:text-gray-400 mx-3"
-              onClick={(e) => handleScroll(e, '#skills')}
+              onClick={(e) => handleScroll(e, "#skills")}
             >
               Skills
             </a>
@@ -110,17 +112,17 @@ const Navbar = () => {
 
       {menuOpen && (
         <div className="md:hidden absolute top-[65px] left-0 w-full bg-[#030014] p-5 flex flex-col items-center space-y-4">
-          <a 
-            href="#about-me" 
+          <a
+            href="#about-me"
             className="text-gray-200 hover:text-gray-400"
-            onClick={(e) => handleScroll(e, '#about-me')}
+            onClick={(e) => handleScroll(e, "#about-me")}
           >
             About Me
           </a>
-          <a 
-            href="#skills" 
+          <a
+            href="#skills"
             className="text-gray-200 hover:text-gray-400"
-            onClick={(e) => handleScroll(e, '#skills')}
+            onClick={(e) => handleScroll(e, "#skills")}
           >
             Skills
           </a>

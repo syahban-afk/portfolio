@@ -4,6 +4,21 @@ import { ProjectsAll } from "@/constants";
 import Link from "next/link";
 
 const ProjectCardAll = () => {
+  const truncateText = (text: string, maxWords: number, index: number) => {
+    const words = text.split(' ');
+    if (words.length > maxWords) {
+      return (
+        <>
+          {words.slice(0, maxWords).join(' ')} ...{' '}
+          <Link href={`/projects/${index}`} className="text-blue-500 hover:text-blue-400">
+            See More
+          </Link>
+        </>
+      );
+    }
+    return text;
+  };
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
       {ProjectsAll.map((project, index) => (
@@ -21,7 +36,9 @@ const ProjectCardAll = () => {
 
           <div className="relative p-4">
             <h1 className="text-2xl font-semibold text-white">{project.title}</h1>
-            <p className="mt-2 text-gray-300">{project.description}</p>
+            <p className="mt-2 text-gray-300">
+              {truncateText(project.description, 10, index)}
+            </p>
             <div className="flex gap-4 mt-4">
               <Link
                 href={`/projects/${index}`}
