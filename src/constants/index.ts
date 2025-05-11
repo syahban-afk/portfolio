@@ -104,15 +104,47 @@ export const ProjectsAll = [
     link: "https://github.com/syahban-afk/portfolio",
     description:
       "Sebuah website portofolio pribadi yang dibuat menggunakan Next.js, React, Tailwind CSS, dan TypeScript. Website ini menampilkan informasi tentang saya, proyek-proyek yang telah saya buat, serta kontak yang terhubung ke media sosial. Fokus utama pada performa, desain yang clean, dan navigasi yang mudah diakses.",
-    src: "/projects/NextWebsite.png",
-    technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
+    src: "/projects/portfolio.png",
+    technologies: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
+  },
+  {
+    title: "Event Rating System",
+    link: "https://github.com/syahban-afk/Event-rating-system",
+    description:
+      "Sistem backend untuk penilaian acara, dibuat dengan Node.js, Express.js, dan MySQL. Menyediakan API untuk mengelola data acara dan penilaian dari pengguna. Cocok untuk digunakan dalam event internal, seminar, atau kegiatan organisasi.",
+    src: "/projects/event_rating.jpg",
+    technologies: ["Express.js", "MySQL", "Node.js"],
+  },
+  {
+    title: "Sistem Manajemen Piket",
+    link: "https://github.com/Abdul-liebert/Saas-2024",
+    description:
+      "Aplikasi Jadwal Piket dan Manajemen Peralatan Piket adalah sebuah platform berbasis web yang dirancang untuk memudahkan pengelolaan jadwal piket dan inventaris peralatan yang digunakan dalam kegiatan piket harian. Aplikasi ini dibangun menggunakan TypeScript untuk memastikan penulisan kode yang kuat dan aman, serta Next.js sebagai kerangka kerja React yang mendukung rendering sisi server (server-side rendering) dan peningkatan performa aplikasi. Untuk tampilan antarmuka, aplikasi ini menggunakan ShadcnUI, sebuah pustaka komponen UI modern yang fleksibel, serta Tailwind CSS untuk mempercepat proses styling dengan pendekatan utility-first yang efisien.",
+    src: "/projects/piket.png",
+    technologies: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
   },
   {
     title: "Financial Report",
     link: "https://github.com/syahban-afk/financial-report",
     description:
       "Sebuah backend-only project untuk sistem laporan keuangan, dibuat menggunakan Node.js, Express.js, dan MongoDB. Fitur utama termasuk manajemen data keuangan (input, update, delete) dan API endpoints untuk integrasi dengan frontend atau aplikasi lain.",
-    src: "/projects/CardImage.png",
+    src: "/projects/finance.jpg",
     technologies: ["Express.js", "Node.js", "MongoDB"],
   },
   {
@@ -120,31 +152,23 @@ export const ProjectsAll = [
     link: "https://github.com/syahban-afk/hackton-ex",
     description:
       "Proyek remake dari website Bazma, dibuat ulang menggunakan teknologi modern seperti Next.js, React, Tailwind CSS, dan TypeScript.",
-    src: "/projects/SpaceWebsite.png",
-    technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
+    src: "/projects/bazma_web.png",
+    technologies: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
   },
   {
     title: "Web Tech-ID",
     link: "https://github.com/syahban-afk/Web-Technology/tree/main",
     description:
       "Sebuah website statis yang menampilkan halaman portofolio dan blog, dibangun menggunakan HTML, CSS, dan JavaScript murni. Fokus pada struktur layout dan user interface, cocok sebagai latihan dasar web design tanpa framework modern.",
-    src: "/projects/NextWebsite.png",
+    src: "/projects/web_tech.png",
     technologies: ["HTML", "CSS", "JavaScript"],
-  },
-  {
-    title: "Dormitory Inventory Website",
-    link: "https://github.com/Abdul-liebert/Saas-2024",
-    description:
-      "Website statis sederhana untuk mendata inventaris asrama, dibangun dengan HTML, CSS, dan JavaScript. Mencakup tampilan data barang, informasi kamar, dan pemilik barang. Cocok untuk skala kecil dan latihan dasar pengelolaan UI.",
-    src: "/projects/CardImage.png",
-    technologies: ["HTML", "CSS", "JavaScript"],
-  },
-  {
-    title: "Event Rating System",
-    link: "https://github.com/syahban-afk/Event-rating-system",
-    description:
-      "Sistem backend untuk penilaian acara, dibuat dengan Node.js, Express.js, dan MySQL. Menyediakan API untuk mengelola data acara dan penilaian dari pengguna. Cocok untuk digunakan dalam event internal, seminar, atau kegiatan organisasi.",
-    src: "/projects/SpaceWebsite.png",
-    technologies: ["Express.js", "MySQL", "Node.js"],
   },
 ];

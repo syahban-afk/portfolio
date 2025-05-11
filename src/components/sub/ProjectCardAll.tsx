@@ -5,12 +5,15 @@ import Link from "next/link";
 
 const ProjectCardAll = () => {
   const truncateText = (text: string, maxWords: number, index: number) => {
-    const words = text.split(' ');
+    const words = text.split(" ");
     if (words.length > maxWords) {
       return (
         <>
-          {words.slice(0, maxWords).join(' ')} ...{' '}
-          <Link href={`/projects/${index}`} className="text-blue-500 hover:text-blue-400">
+          {words.slice(0, maxWords).join(" ")} ...{" "}
+          <Link
+            href={`/projects/${index}`}
+            className="text-blue-500 hover:text-blue-400"
+          >
             See More
           </Link>
         </>
@@ -26,16 +29,19 @@ const ProjectCardAll = () => {
           key={index}
           className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] hover:border-[#7042f88b] transition-all duration-300"
         >
-          <Image
-            src={project.src}
-            alt={project.title}
-            width={1000}
-            height={1000}
-            className="w-full object-contain"
-          />
+          <div className="w-full h-[300px] relative">
+            <Image
+              src={project.src}
+              alt={project.title}
+              fill
+              className="object-cover rounded-t-lg"
+            />
+          </div>
 
           <div className="relative p-4">
-            <h1 className="text-2xl font-semibold text-white">{project.title}</h1>
+            <h1 className="text-2xl font-semibold text-white">
+              {project.title}
+            </h1>
             <p className="mt-2 text-gray-300">
               {truncateText(project.description, 10, index)}
             </p>
